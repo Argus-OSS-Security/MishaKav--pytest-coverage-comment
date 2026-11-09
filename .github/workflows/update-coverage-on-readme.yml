@@ -1,9 +1,10 @@
 name: Update Coverage on Readme
-on:
-  push:
-    branches:
-      - test-branch
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - test-branch
+# 
 permissions:
   contents: write
   checks: write

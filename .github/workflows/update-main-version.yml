@@ -1,18 +1,19 @@
 name: Update Main Version
 run-name: Move ${{ inputs.major_version }} to ${{ inputs.target }}
 
-on:
-  workflow_dispatch:
-    inputs:
-      target:
-        description: The tag or reference to use
-        required: true
-      major_version:
-        type: choice
-        description: The major version to update
-        options:
-          - v1
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       target:
+#         description: The tag or reference to use
+#         required: true
+#       major_version:
+#         type: choice
+#         description: The major version to update
+#         options:
+#           - v1
+# 
 jobs:
   tag:
     runs-on: ubuntu-latest

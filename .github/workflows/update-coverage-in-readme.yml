@@ -1,13 +1,14 @@
 name: Update Coverage in README
-on:
-  push:
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.yml'
-      - '.github/**'
-      - 'data/**'
-      - 'dist/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     paths-ignore:
+#       - '**/*.md'
+#       - '**/*.yml'
+#       - '.github/**'
+#       - 'data/**'
+#       - 'dist/**'
+# 
 permissions:
   contents: read
 
